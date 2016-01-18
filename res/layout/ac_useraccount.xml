@@ -1,0 +1,269 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:background="@color/mainbg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="#ffffff"
+        >
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+             >
+            
+            <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFB90F"
+         
+            >
+           <!--  <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:background="@android:color/transparent" 
+                    android:src="@drawable/paopaoback"
+             
+                    android:layout_alignParentBottom="true"
+                /> -->
+            <FrameLayout 
+                android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+                  android:id="@+id/myrelate"
+                >
+                 <com.mc.parking.client.layout.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/roundimage"
+            android:src="@drawable/ic_launcher"
+            android:background="#03000000"
+             />
+        
+                 <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/touxiang"
+            android:layout_margin="3dp"
+            android:src="@drawable/centercircle"
+            android:visibility="visible"
+             />
+           
+</FrameLayout>
+            
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_alignParentBottom="true"
+                 android:background="@android:color/transparent"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/paopaoback" />
+
+              <!-- <LinearLayout
+                android:id="@+id/sign"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="#80000000"
+                android:orientation="horizontal" >
+
+                
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/black" />
+
+                
+            </LinearLayout> -->
+        </RelativeLayout>
+
+        <!--     <LinearLayout
+                android:id="@+id/userinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <com.mc.parking.client.layout.RoundImageView
+                    android:id="@+id/touxiang"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/avatar_default" 
+                    android:clickable="true"
+                    >
+                    
+                </com.mc.parking.client.layout.RoundImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="车主甲"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sign"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal" >
+
+
+
+                <ImageView 
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content" 
+                     android:src="@drawable/huodongbg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+            </LinearLayout> -->
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/lyout1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/fl"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/personally"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:orientation="vertical" >
+                 <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" 
+                      android:src="@drawable/mypoint"/>
+      
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white" >
+                 
+                 <ImageView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" 
+                     android:src="@drawable/sign"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white" >
+                 <ImageView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" 
+                     android:src="@drawable/gift"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/lyout1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white" >
+                 <ImageView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" 
+                     android:src="@drawable/set"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/suggest" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/suggest" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white" >
+                       
+                     <ImageView 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" 
+                     android:src="@drawable/tingchequan"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:orientation="horizontal"
+       android:background="#FF8C00"
+android:layout_alignParentBottom="true"
+       >
+         <ImageView 
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/huodong"
+            android:layout_marginLeft="10dp"
+             /> 
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="30dp"
+           android:orientation="vertical"
+           >
+           <TextView 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="你停车我买单："
+               android:gravity="center_horizontal"
+               />
+           
+           <TextView 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="你停车我买单："
+               android:gravity="center_horizontal"
+               android:layout_marginTop="5dp"
+               />
+       </LinearLayout>
+   </LinearLayout>
+ 
+    </RelativeLayout>
+
+</LinearLayout>

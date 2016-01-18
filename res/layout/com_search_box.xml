@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/topbarBacks"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/maptitlebtn"
+        android:src="@drawable/btn_back" />
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/topbarBack"
+        android:background="@drawable/searchbox"
+        android:hint="@string/search_hint"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="35dp"
+        android:singleLine="true"
+        android:textSize="14dip"
+        android:textStyle="italic" />
+
+    <requestFocus />
+
+    <ImageView
+        android:id="@+id/search_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/topbarBack"
+        android:clickable="true"
+        android:src="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/delete_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:src="@drawable/delete_24"
+        android:visibility="gone" />
+        <ImageView
+        android:id="@+id/voice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:src="@drawable/voice" />
+
+</RelativeLayout>

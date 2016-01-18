@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:id="@+id/reg_g1_account"
+        style="@style/accountInputBorder"
+        android:layout_marginTop="18dp" >
+
+        <EditText
+            android:id="@+id/reg_g1_userid"
+            style="@style/accountEditText"
+            android:hint="@string/login_account_hint"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reg_g1_verify"
+        style="@style/accountInputBorder"
+        
+        android:layout_marginTop="15dp" >
+
+        <EditText
+            android:id="@+id/edit_verifycode"
+            style="@style/accountEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/reg_typeverify"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/request_verifycode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.12"
+            android:background="@drawable/btn_show"
+            android:text="@string/reg_sendverify"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+   
+
+    <LinearLayout
+        android:id="@+id/reg_userpassword"
+        style="@style/accountInputBorder"
+        android:layout_marginTop="15dp" >
+
+        <EditText
+            android:id="@+id/edit_password"
+            style="@style/accountEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="请输入登录密码" />
+    </LinearLayout>
+ <LinearLayout
+        android:id="@+id/reg_pushnumber"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp" 
+        android:layout_marginRight="15dp">
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:textSize="15dp"
+          android:text="推广码(选填):"
+          android:textColor="@color/gray_light"
+          />
+
+        <EditText
+            android:id="@+id/edit_pushnumber"
+            style="@style/accountEditText"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:enabled="false"
+            android:textSize="15dp"
+            android:hint="" />
+                <ImageView
+            android:id="@+id/scan_pushnumberview"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/scan_image"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/scan"
+
+            />
+   <ImageView
+            android:id="@+id/scan_"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/scan_image"
+            android:clickable="true"
+            android:padding="10dp"
+            android:src="@drawable/scan"
+                        android:visibility="gone"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/reg_submitlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="13dp" >
+
+        <Button
+            android:id="@+id/reg_submit"
+            style="@style/accountButtonStyle"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/btn_quick_register"
+            android:text="注册" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainbg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/searchbox"
+        android:descendantFocusability="blocksDescendants" >
+
+        <LinearLayout
+            android:id="@+id/owner_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:contentDescription="@string/app_name"
+                android:text="￥"
+                android:textSize="20sp"
+                android:textColor="@color/gray"
+                android:src="@drawable/star_selected" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/youhui_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@id/owner_img"
+            android:layout_weight="1"
+            android:text="6"
+            android:maxEms="3"
+             android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/youhui_money"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/youhui_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_detail_coupon"
+                 android:singleLine="true"
+                android:textColor="@color/gray"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView 
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间："
+                    android:textSize="9sp"
+                    android:layout_marginRight="2dp"
+                      android:singleLine="true"
+                    />
+
+                <TextView
+                    android:id="@+id/youhui_stardate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/youhui_info"
+                    android:layout_marginRight="2dp"
+                    android:gravity="left"
+                    android:text="--:--"
+                  android:singleLine="true"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView 
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间："
+                    android:textSize="9sp"
+                    android:layout_marginRight="2dp"
+                      android:singleLine="true"
+                    />
+
+                <TextView
+                    android:id="@+id/youhui_enddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/youhui_info"
+                    android:layout_marginRight="2dp"
+                    android:gravity="left"
+                    android:text="--:--"
+                    android:singleLine="true"
+                    android:textSize="11sp" />
+
+          
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+     <ImageView
+            
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/goto_u" />
+        -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

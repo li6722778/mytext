@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/fragment_topbar"
+        android:name="com.mc.parking.client.ui.fragment.TopBarFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+
+        <fragment
+            android:id="@+id/fragment_map"
+            android:name="com.mc.parking.client.ui.fragment.MapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+
+    
+
+            
+    
+
+</LinearLayout>

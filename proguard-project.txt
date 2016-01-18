@@ -1,0 +1,184 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-libraryjars libs/alipaySDK-20150602.jar
+-libraryjars libs/android_api_1.1_forsdk.jar
+-libraryjars libs/android-support-v4.jar
+-libraryjars libs/BaiduLBS_Android.jar
+-libraryjars libs/galaxy_mini.jar
+-libraryjars libs/GetuiExt-2.0.3.jar
+-libraryjars libs/GetuiSdk2.3.0.0.jar
+-libraryjars libs/gson-2.2.4.jar
+-libraryjars libs/httpclient-4.3.5.jar
+-libraryjars libs/httpcore-4.3.2.jar
+-libraryjars libs/httpmime-4.3.5.jar
+-libraryjars libs/ormlite-android-4.49-SNAPSHOT.jar
+-libraryjars libs/ormlite-core-4.49-SNAPSHOT.jar
+-libraryjars libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar
+-libraryjars libs/zxing.jar
+-libraryjars libs/armeabi/libapp_BaiduNaviApplib_v1_0_0.so
+-libraryjars libs/armeabi/libBaiduMapSDK_v3_4_0_15.so
+-libraryjars libs/armeabi/libCNPackage.so
+-libraryjars libs/armeabi/libejTTS.so
+-libraryjars libs/armeabi/libgetuiext.so
+-libraryjars libs/armeabi/libgetuiext.so
+-libraryjars libs/armeabi/liblocnaviSDK.so
+-libraryjars libs/armeabi/liblocSDK5.so
+
+
+
+
+-keep class com.alipay.android.app.IAlixPay{*;}
+-keep class com.alipay.android.app.IAlixPay$Stub{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback$Stub{*;}
+-keep class com.alipay.sdk.app.PayTask{ public *;}
+-keep class com.alipay.sdk.app.AuthTask{ public *;}
+-keep class com.ta.utdid2.**{ *;}
+-keep class com.ut.**{ *;}
+
+-dontwarn com.alipay.**
+-dontwarn com.ta.**
+-dontwarn com.ut.**
+
+-keep public class * extends android.app.Fragment  
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+-dontwarn android.support.v4.**   
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keep class com.itheima.mobilesafe.engine.AppInfoProvider
+-keep class net.youmi.android.** {*;}
+-keep class * extends android.os.Handler
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class sun.misc.Unsafe { *; }
+-keep class **.R$* {*;}
+-keep class com.mc.parking.client.**{*;}
+
+
+
+
+#百度
+-keep class com.baidu.navisdk.** { *; }
+-keep interface com.baidu.navisdk.** { *; }
+-keep class com.sinovoice.hcicloudsdk.**{*;}
+-keep interface com.sinovoice.hcicloudsdk.**{*;}
+-dontwarn com.sinovoice.hcicloudsdk.**
+-keep class com.baidu.** { *; }
+-keep class vi.com.gdi.bgl.android.**{*;}
+-keep class com.sinovoice.** {*;}
+-dontwarn com.baidu.navisdk.comapi.tts.ttsplayer.**
+-dontwarn com.baidu.navisdk.**
+
+
+
+# orm混淆
+-keep class com.j256.ormlite.** { *; }    
+-keep class com.j256.ormlite.android.** { *; }    
+-keep class com.j256.ormlite.field.** { *; }    
+-keep class com.j256.ormlite.stmt.** { *; }   
+-dontwarn com.j256.ormlite.**
+
+# getui混淆
+-keep class com.igexin.**{*;} 
+-dontwarn com.igexin.**
+ 
+ # slidingmenu 的混淆 
+ -keep class com.jeremyfeinstein.slidingmenu.lib.** { *; } 
+ -dontwarn com.jeremyfeinstein.slidingmenu.lib.**
+ 
+# ActionBarSherlock混淆
+ -dontwarn com.actionbarsherlock.**
+ -keep class com.actionbarsherlock.** { *; }
+ -keep interface com.actionbarsherlock.** { *; } 
+ 
+ # universal-image-loader 混淆 
+ -dontwarn com.nostra13.universalimageloader.**
+-keep class com.nostra13.universalimageloader.** { *; } 
+ 
+
+ 
+ # 保持自定义控件类不被混淆
+-keepclasseswithmembernames class * {  
+    native <methods>;  
+}  
+  
+-keepclasseswithmembernames class * {  
+    public <init>(android.content.Context, android.util.AttributeSet);  
+}  
+ 
+ -keepclassmembernames class com.mc.parking.client.entity{ *;} 
+  
+  
+-keepclasseswithmembernames class * {  
+    public <init>(android.content.Context, android.util.AttributeSet, int);  
+}  
+  
+-keepclassmembers enum * {  
+    public static **[] values();  
+    public static ** valueOf(java.lang.String);  
+}  
+  
+-keep class * implements android.os.Parcelable {  
+  public static final android.os.Parcelable$Creator *;  
+}  
+  
+-keepclasseswithmembers class * {  
+    public <init>(android.content.Context);  
+}  
+
+
+##---------------Begin: proguard configuration for Gson  ----------  
+  
+# Gson uses generic type information stored in a class file when working with fields. Proguard  
+# removes such information by default, so configure it to keep all of it.  
+-keepattributes Signature  
+  
+# Gson specific classes  
+-keep class sun.misc.Unsafe { *; }  
+#-keep class com.google.gson.stream.** { *; }  
+# Application classes that will be serialized/deserialized over Gson  
+-keep class com.google.gson.examples.android.model.** { *; }  
+  
+##---------------End: proguard configuration for Gson  ----------  
+
+# volley
+-dontwarn com.android.volley.jar.**
+-keep class com.android.volley.**{*;}
+
+# http client
+-keep class org.apache.http.** {*; }
+-dontwarn org.apache.http.**
+
+#zixing
+-keep class com.google.zixing.** {*; }
+-dontwarn com.google.zixing.**
+
+
+#微信支付混淆
+-keep class com.tencent.mm.sdk.** {*;}

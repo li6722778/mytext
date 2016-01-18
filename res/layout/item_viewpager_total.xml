@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30sp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/indicator_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/indicator_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/baseviewpage_firstnumb"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="38dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/badge_a"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/gray_white"
+                android:textSize="11dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/baseviewpage_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/mainbg"
+            />
+        
+        <RelativeLayout
+            android:id="@+id/indicator_relay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/baseviewpage_numb"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="38dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/badge_a"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/gray_white"
+                android:textSize="11dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/baseviewpage_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="未提交"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

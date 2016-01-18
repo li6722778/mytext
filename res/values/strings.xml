@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">车泊乐</string>
+    <string name="list_loading">正在载入...</string>
+    <string name="action_settings">Settings</string>
+    <string name="startlocation">开启定位</string>
+    <string name="stoplocation">停止定位</string>
+    <string name="error_code_desc">错误码说明</string>
+    <string name="qa_title">常见问题</string>
+    <string name="hight_accuracy_desc">高精度定位模式下，会同时使用GPS、Wifi和基站定位，返回的是当前条件下精度最好的定位结果</string>
+    <string name="saving_battery_desc">低功耗定位模式下，仅使用网络定位即Wifi和基站定位，返回的是当前条件下精度最好的网络定位结果</string>
+    <string name="device_sensor_desc">仅用设备定位模式下，只使用用户的GPS进行定位。这个模式下，由于GPS芯片锁定需要时间，首次定位速度会需要一定的时间</string>
+    <string name="error_code_detail"> 61 ： GPS定位结果\n
+		62 ： 扫描整合定位依据失败。此时定位结果无效。\n
+		63 ： 网络异常，没有成功向服务器发起请求。此时定位结果无效。\n
+		65 ： 定位缓存的结果。\n
+		66 ： 离线定位结果。通过requestOfflineLocaiton调用时对应的返回结果\n
+		67 ： 离线定位失败。通过requestOfflineLocaiton调用时对应的返回结果\n
+		68 ： 网络连接失败时，查找本地离线定位时对应的返回结果\n
+		161： 表示网络定位结果\n
+		162~167： 服务端定位失败\n
+		502：key参数错误\n
+		505：key不存在或者非法\n
+		601：key服务被开发者自己禁用\n
+		602：key mcode不匹配\n
+		501～700：key验证失败\n</string>
+    <string name="qa_callback">问题反馈方法</string>
+    <string name="qa_callback_mail">mapapi@baidu.com</string>
+    <string name="search_label">搜索</string>
+    <string name="search_hint">目的地</string>
+    <string name="search_settings_description">搜索设置</string>
+    <string name="no_data">加载更多</string>
+    <string name="history_data">历史搜索关键字 </string>
+    <string name="navigation_pos">车位导航</string>
+    <string name="coupon_park">停车券</string>
+
+    <!-- 右边拉出界面 -->
+    <string name="menu_nologin">请登录</string>
+    <string name="menu_username">1355119</string>
+    <string name="menu_quit">退出系统</string>
+       <string name="menu_service">服务记录</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_offlinemap">离线地图</string>
+    <string name="menu_parkadmin">订单管理</string>
+    <string name="menu_parkdetail">订单记录</string>
+    <string name="menu_wallet">我的钱包</string>
+    <string name="menu_carnumber">辽ALH102</string>
+    <string name="menu_startpark">开始停车</string>
+    <string name="menu_outtimepark">错时停车</string>
+    <string name="menu_sublet">转租信息</string>
+    <string name="menu_othercontent">精彩内容</string>
+    <string name="menu_coupon">优惠</string>
+    <string name="menu_getparkinfo">信息采集</string>
+    <string name="menu_addparker">价格调整</string>
+    <string name="menu_getcash">提现</string>
+    <string name="menu_history">采集记录</string>
+
+    <!-- 车位详情界面 -->
+    <string name="parkdetail_detail">车位计时价格</string>
+    <string name="parkdetail_title">车位详情</string>
+    <string name="bookparkok">马上预约</string>
+    <string name="bookparkcancel">再看看</string>
+    <string name="descr_image">Image</string>
+    <string name="detail_link">车位详情</string>
+
+    <!-- 登陆界面 -->
+    <string name="loginStr">请登录</string>
+    <string name="login_account">手机号</string>
+    <string name="login_password">密码</string>
+    <string name="login_account_hint">请输入您的手机号</string>
+    <string name="login_password_hint">请输入您的密码</string>
+    <string name="login_show">显示</string>
+    <string name="login_forget_password">忘记密码</string>
+    <string name="login_add_accounts">快速注册</string>
+    <string name="login_quick_register">立即登录</string>
+
+    <!-- 注册界面 -->
+    <string name="reg_title">用户注册</string>
+    <string name="reg_phone">手机号</string>
+    <string name="reg_sendverify">发送验证码</string>
+    <string name="reg_typeverify">输入验证码</string>
+    <string name="reg_next">下一步</string>
+    <string name="reg_loginpass">登陆密码</string>
+    <string name="reg_hintloginpass">请输入您的登陆密码</string>
+    <string name="reg_detailtitle">用户注册(2/2)</string>
+    <string name="reg_carnumber">车牌号</string>
+    <string name="reg_hintcarnumber">请输入您的车牌</string>
+
+    <!-- double confirm -->
+    <string name="dc_title">预计到达</string>
+    <string name="dc_submit">马上提交</string>
+    <string name="dc_cancel">还是算了</string>
+
+    <!-- 滑动界面 -->
+    <string name="rightmenu_userinfo_title">用户信息</string>
+    <string name="rightmenu_parkhis_title">泊车记录</string>
+    <string name="rightmenu_wallet_title">我的钱包</string>
+    <string name="rightmenu_offinemap_title">离线地图</string>
+
+    <!-- 离线地图 -->
+    <string name="offinemap_currentcity">当前定位城市:</string>
+    <string name="offinemap_download">下载离线地图</string>
+
+    <!-- 停车明细 -->
+    <string name="ptr_pull_to_refresh">下拉刷新</string>
+    <string name="ptr_release_to_refresh">释放开始刷新</string>
+    <string name="ptr_refreshing">刷新…</string>
+    <string name="ptr_last_updated">更新: %1$s</string>
+    <string name="order_nfc">NFC</string>
+    <string name="order_detail_cheweititle">我的车位订单</string>
+    <string name="order_detail_title">订单详情</string>
+    <string name="order_message"><b>可向管理员出示本页,或开启NFC功能确认身份</b></string>
+    <string name="order_backmap">返回地图</string>
+
+    <!-- 订单确认 -->
+    <string name="order_pay_title">支付确认</string>
+    <string name="order_detail_numnber">订单号码:</string>
+    <string name="order_detail_date">订单时间:</string>
+    <string name="order_detail_paydate">支付时间:</string>
+    <string name="order_detail_startdate">入场时间:</string>
+    <string name="order_detail_enddate">出场时间:</string>
+    <string name="order_detail_calcupay">计费方式:</string>
+    <string name="order_detail_p1">订单提交</string>
+    <string name="order_detail_p2">已支付</string>
+    <string name="order_detail_p3">已入场</string>
+    <string name="order_detail_p4">已出场</string>
+    <string name="order_detail_gotonavi">去这里</string>
+    <string name="order_detail_gotopay">去支付</string>
+    <string name="order_detail_scandone">扫码成功</string>
+    <string name="order_detail_coupon">停车劵</string>
+    <string name="order_detail_total">还需付</string>
+    <string name="order_detail_scanname">扫码确认</string>
+    <string name="order_cash_button">提交订单</string>
+    <string name="order_pay_button">确认，去支付</string>
+
+    <!-- 支付方式 -->
+    <string name="pay_title">支付方式</string>
+    <string name="payway_weixin">微信支付</string>
+    <string name="payway_zfb">支付宝</string>
+    <string name="payway_yhk">银行卡</string>
+
+    <!-- 我的钱包 -->
+    <string name="wallet_yue">余额:</string>
+    <string name="wallet_yuan">元</string>
+    <string name="wallet_chong">充值</string>
+    <string name="wallet_ti">提现</string>
+    <string name="wallet_card">我的银行卡</string>
+    <string name="wallet_policy"><u>车泊乐支付服务条款</u></string>
+
+    <!-- 优惠界面 -->
+    <string name="youhui_add">应用</string>
+    <string name="youhui_title">优惠</string>
+
+    <!-- 用户信息 -->
+    <string name="user_sercrity">账户安全</string>
+    <string name="user_serc_loginpass">修改登录密码</string>
+    <string name="user_serc_paypass">修改支付密码</string>
+    <string name="user_serc_forgetpaypass_pop">找回您的密码</string>
+    <string name="user_serc_forgetpaypass">找回支付密码</string>
+    <string name="user_systemconfig">系统设置</string>
+    <string name="user_about">关于我们</string>
+    <string name="user_update">版本更新</string>
+    <string name="user_exit">退出账户</string>
+    <string name="user_system_newmess">新消息提醒</string>
+    <string name="user_system_message">新消息通知</string>
+    <string name="user_system_voice">声音</string>
+    <string name="user_system_vire">震动</string>
+    <string name="serc_currentpass">当前密码</string>
+    <string name="serc_changepass">新密码</string>
+    <string name="serc_rechangepass">重复新密码</string>
+    <string name="serc_email">EMAIL</string>
+    <string name="serc_email_hint">请输入您的EMAIL</string>
+
+    <!-- 停车相关menu -->
+    <string name="menu_other_all">全部</string>
+    <string name="menu_other_transfer">转让</string>
+    <string name="menu_other_rent">求租</string>
+    <string name="menu_other_rent_title">转租信息</string>
+
+    <!-- 车位管理员 -->
+    <string name="admin_title">车位管理员</string>
+    <string name="admin_tab1">车位实况</string>
+    <string name="admin_tab2">订单管理</string>
+    <string name="admin_tab3">订单处理</string>
+    <string name="admin_tab4">管理中心</string>
+    <string name="admin_cheweititle">收到的车位订单</string>
+    <string name="admin_shenyu">开始接单</string>
+    <string name="admin_fabu">发布车位</string>
+    <string name="admin_reduce">减少车位</string>
+    <string name="admin_chooser_nfc">NFC确认</string>
+    <string name="admin_chooser_scan">二维码扫描</string>
+    <string name="admin_order_detail_title">订单详情</string>
+    <string name="admin_order_detail_ordernumber">订单编号</string>
+    <string name="admin_order_detail_from">来自用户</string>
+    <string name="admin_order_detail_orderdate">预定时间</string>
+    <string name="admin_order_detail_startdate">开始时间</string>
+    <string name="admin_order_detail_enddate">结束时间</string>
+    <string name="admin_order_detail_back">返回</string>
+    <string name="scan_tips">将二维码图片对准扫描框</string>
+    <string name="admin_park_selection">请选择停车场</string>
+    <string name="admin_parktime_selection">请选择</string>
+
+    <!-- 上传照片界面 -->
+    <string name="uploadphoto_titile">图片信息</string>
+
+    <!-- LISTVIEW -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">加载更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="menu_settings">Settings</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="regnotice">正在加载...</string>
+    <string name="argee">注册协议</string>
+    <string name="agress">同意协议</string>
+    <string name="share_content">分享成功即有机会获得优惠劵</string>
+    <string name="share_tofriend">好东西大家一起分享</string>
+    <string name="share_cancel">取消</string>
+    <string name="share">分享给好友</string>
+    <string name="sharetoc">分享到朋友圈</string>
+
+    <!-- 微信支付 -->
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <!-- 微信分享 -->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    
+    
+    <!-- 我的账户 -->
+    
+     <string name="accountitle">我的账户</string>
+
+     
+      <!-- JazzyViewPager -->
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+    
+    
+    
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="splash_version_info">粮油追溯客户端\n\nVersion 1.0.0</string>
+    <string name="index_search_edit_hint">搜索粮油商品</string>
+
+    <!-- 菜单 -->
+    <string name="menu_setting">设置</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit">退出</string>
+    <!-- 菜单 -->
+
+
+    <!-- 首页PopupWnidow -->
+    <string name="barcode_buy">条码购</string>
+    <string name="camera_buy">拍照购</string>
+    <string name="color_buy">颜色购</string>
+    <!-- 首页PopupWnidow -->
+
+
+    <!-- 首页 -->
+    <string name="index_limit">还剩</string>
+    <string name="index_hour">时</string>
+    <string name="index_min">分</string>
+    <string name="index_seconds">秒</string>
+    <string name="index_price">类别:</string>
+    <string name="index_raw_price">公司:</string>
+    <string name="index_slogan">明星产品</string>
+    <string name="index_promotion">查询</string>
+    <string name="index_recharge">放心产品</string>
+    <string name="index_group_buy">放心企业</string>
+    <string name="index_lottery">地图</string>
+    <string name="index_shake">摇一摇</string>
+    <string name="index_order">购物车</string>
+    <string name="index_history">浏览历史</string>
+    <string name="index_collect">我的关注</string>
+    <string name="index_life_journey">生活娱乐</string>
+    <string name="index_notify_info">向左滑，更多优惠等你抢</string>
+    <string name="index_shopping_jinqiufengbao">金秋风暴</string>
+    <string name="index_shopping_remenyouhui">热门特惠</string>
+    <!-- 首页 -->
+
+<!-- 商品分类 -->
+<string name="category">全部分类</string>
+<!-- 二维码 -->
+<string name="scan_tip">请将二维码置于取景框内扫描</string>
+<string name="scan_retry">二维码扫描出错啦,请重新扫描</string>
+    <string name="scan_title">扫一扫</string>
+    <!-- 个人中心 -->
+    <string name="personal_title">我的京东</string>
+    <string name="personal_more">更多</string>
+    <string name="personal_welcome">欢迎来到京东</string>
+    <string name="personal_login">登录</string>
+    <string name="personal_fast_search">订单状态速查</string>
+    <string name="personal_wait_pay">待付款订单</string>
+    <string name="personal_all_order">全部订单</string>
+    <string name="personal_my_focus">我的关注</string>
+    <string name="personal_comment">商品评价/晒单</string>
+    <string name="personal_information">消息中心</string>
+    <string name="personal_quick_buy">轻松购</string>
+    <string name="personal_account">账户安全</string>
+    <string name="personal_return_back">返修/退换货</string>
+    <string name="personal_order_center">订单中心</string>
+    <string name="personal_account_center">账户中心</string>
+    <string name="personal_customer_service">客户服务</string>
+    <string name="personal_infomation_service">预约电话服务</string>
+    
+    <string name="personal_favour">猜你喜欢</string>
+    <string name="personal_favour_introduce">三星Glaxy_S4是一款不错的手机，大屏，霸气。</string>
+    <string name="personal_quit">退出登录</string>
+    <!-- 个人中心 -->
+
+<!-- 登陆界面 -->
+    <string name="login">登录</string>
+    <string name="loginacount">账号名：</string>
+    <string name="loginpassword">密   码：</string>
+    <string name="inputpassword">请输入密码</string>
+    <string name="inputaccount">请输入账号</string>
+    <string name="register">快速注册</string>
+    <string name="search_info">暂无收索历史</string>
+    <string name="login_btn">登   录</string>
+    <string name="find_password">找回密码</string>
+    <string name="usecooperationaccount">用合作网站帐户登录</string>
+    <string name="registerfree">免费注册</string>
+    <string name="login_loading">正在登錄，請稍候。。</string>
+    
+    
+<!--  购物车 -->
+    <string name="cart">购物车</string>
+    <string name="cartinfo_no">您的购物车是空的，快去选购吧！</string>
+    <string name="cartinfo_synchronous">购物车同步中</string>
+    <string name="cart_logininfo">您可以在登录后系统后同步电脑与手机购物 \n车中的商品</string>
+    <string name="cart_market">促销大卖场</string>
+    
+<!--   更多 -->
+<string name="more">更多</string>
+
+<string name="more_history">浏览记录</string>
+<string name="more_seting">设置</string>
+<string name="more_help">帮助 </string>
+<string name="more_opinion">意见反馈</string>
+<string name="more_aboutus">关于我们</string>
+<string name="more_update">检测更新</string>
+<string name="more_exit">退出</string>
+<string name="more_apps">应用推荐</string>
+
+
+<!-- 注册 -->
+<string name="registerinfo">输入手机号后，点击"获取密码"，系统会自动向你的手机发送一条短信</string>
+<string name="register_tip">【提示】\n 1.使用手机号注册免费 \n 2.此手机号用来登录京东\n 3.你还可以选择其他注册方式</string>
+<string name="register_in_normal">普通用户注册</string>
+<string name="register_normal_useraccount">帐户名：</string>
+<string name="register_normal_useraccount_hint">请输入你的手机号</string>
+<string name="register_normal_email">邮箱：</string>
+<string name="register_normal_email_hint">请输入邮箱帐号</string>
+<string name="register_normal_password">密码：</string>
+<string name="register_normal_password_hint">请输入密码</string>
+<string name="register_normal_repassword">确认密码：</string>
+<string name="register_normal_repassword_hint">请输入确认密码</string>
+
+<!-- 导航栏的其他的标题和其他 -->
+<string name="clothingcity">服装城</string>
+<string name="hotproduct">热卖商品</string>
+<string name="digital">数码家电馆</string>
+<string name="ebook">好书汇</string>
+<string name="daily">百货集</string>
+
+    
+</resources>

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebg" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+      
+    <ImageButton
+            android:id="@+id/systemconfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/maptitlebtn"
+            android:src="@drawable/menu" /> 
+            
+            <TextView
+                android:id="@+id/topbar_title"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+            
+             <ImageButton
+            android:id="@+id/maplistbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/maptitlebtn"
+            android:src="@drawable/menulist" 
+            android:visibility="gone"
+            /> 
+        
+    </RelativeLayout>
+
+</RelativeLayout>

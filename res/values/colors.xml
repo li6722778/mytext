@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- global setting -->    
+    <color name="level2top">#4F5863</color>
+    <color name="listdarkfont">#0E90D2</color>
+    
+    <!-- customise -->
+    <color name="red">#FF0000</color>
+    <color name="green">#ff4f8c0b</color>
+    <color name="green_dark">#9CDC6A</color>
+    <color name="blue">#4A90E2</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#7c7c7c</color>
+    <color name="gray_dlight">#CCCCCC</color>
+    <color name="gray_white">#ebebeb</color>
+    <color name="gray_light">#887c7c7c</color>
+    <color name="gray_whitenew">#d1d1d1</color>
+    <color name="gray_dark">#2e2e2e</color>
+    <color name="yellow">#FFFC00</color>
+    <color name="pink">#FF87EF</color>
+    <color name="orange">#ff6200</color>
+    <color name="list_divider">#D3D3D3</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_bg">#88838B8B</color>
+    <color name="topbar">#3D98D1</color>
+    <color name="clickbg">#5E5E5E</color>
+    <color name="transparency">#00000000</color>
+    <color name="shadow">#1e000000</color>
+    <color name="grey">#ff5b5a5a</color>
+    <color name="light_gray">#ffebebeb</color>
+    <color name="deep_gray">#ff3b3b3b</color>
+    <color name="sliding_bg">#ff333332</color>
+    <!--<color name="titlebg">#F3F2F2</color>-->
+    <color name="titlebg">#E6E6E6</color>
+    <color name="mainbg">#F1F1F1</color>
+    <color name="orange2">#F78D2C</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    
+        <color name="limit_buy_border_bg">#ffd4bc77</color>
+
+    
+       <color name="search_toolbar_bg">#ff484B50</color>
+    
+        <color name="result_view">#b0000000</color>
+      <color name="viewfinder_mask">#60000000</color>
+      <color name="possible_result_points">#c0ffff00</color> 
+
+      
+        <color name="maincolor">#ffffffff</color>
+<color name="maincolor_select">#ff40E0D0</color>
+<color name="maincolor_textview">#ffC0C0C0</color>
+
+
+
+<color name="normal_orange">#ff6633</color>
+    <color name="normal_bg_color">#f0f0f0</color>
+    <color name="normal_bg_color_litter">#f7f7f7</color>
+
+    <color name="silverGray">#c7c7c7</color>
+    <color name="darkGray">#333333</color>
+
+    <color name="home_search_bg">#e64514</color>
+    <color name="yellowGreen">#42bf06</color>
+    <color name="normal_orange_btn_unclickable">#f5d0a8</color>
+    <color name="normal_orange_btn_pressed">#d25000</color>
+</resources>

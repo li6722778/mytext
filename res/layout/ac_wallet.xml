@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+ 
+        
+        
+        
+
+       <ListView 
+           android:id="@+id/paywaylist"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp">
+           
+       </ListView>
+
+   <Button
+       android:id="@+id/add_payway"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_below="@+id/paywaylist"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/maincontent"
+       android:text="+   添加新的付款方式"
+       android:textColor="@color/blue" />
+
+   </LinearLayout>
+
+</RelativeLayout>

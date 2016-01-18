@@ -1,0 +1,124 @@
+<com.mc.parking.client.layout.StickyNavLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/id_stickynavlayout_topview"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contentbg" >
+
+
+        <FrameLayout
+            android:id="@+id/packdetail_img_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="showphoto" >
+
+            <ImageView
+                android:id="@+id/packdetail_img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/black"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/imglistdemo" />
+
+            <TextView
+                android:id="@+id/packdetail_img_number"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right|bottom"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/parkinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/packdetail_img_frame"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/parkdetail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/parkdetail_title"
+                android:textColor="@color/deep_gray"
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:id="@+id/parkdetail_rat"
+                style="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="2dp"
+                android:isIndicator="true"
+                android:rating="4"
+                android:stepSize="0.5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/parkdetail_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:text="距离"
+                    android:drawableLeft="@drawable/locate"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/parkdetail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:text="荣昌北路13号"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        
+    </RelativeLayout>
+          <com.mc.parking.client.layout.BaseViewPagerIndicator
+              android:id="@id/id_stickynavlayout_indicator"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_alignParentBottom="true"
+              android:background="@color/white" >
+        
+    </com.mc.parking.client.layout.BaseViewPagerIndicator>
+  
+    <android.support.v4.view.ViewPager
+        android:id="@id/id_stickynavlayout_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+</com.mc.parking.client.layout.StickyNavLayout>

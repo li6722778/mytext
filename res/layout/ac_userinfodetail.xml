@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+
+        android:gravity="center"
+        android:orientation="vertical" >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFB90F"
+         
+            >
+            <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:background="@android:color/transparent" 
+                    android:src="@drawable/paopaoback"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentBottom="true"
+                />
+            <FrameLayout 
+                android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+                  android:id="@+id/myrelate"
+                >
+                 <com.mc.parking.client.layout.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher" />
+        
+                 <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:background="@android:color/transparent" 
+            android:src="@drawable/centercircle" />
+           
+</FrameLayout>
+        
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myrelate"
+            android:layout_centerHorizontal="true"
+            android:text="点击头像更换" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.5"
+    android:orientation="vertical"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+        >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="姓名:"
+          
+            android:textSize="19sp"
+            />
+        <EditText 
+            android:layout_width="0dp"
+            android:id="@+id/myname"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/userinfo_shap"
+            />
+        
+    </LinearLayout>
+    
+      <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="手机号:"
+
+            android:textSize="19sp"
+            />
+        <EditText 
+            android:layout_width="0dp"
+            android:id="@+id/mytele"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/userinfo_shap"
+            android:editable="false"
+            />
+        
+    </LinearLayout>
+    
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="车牌号:"
+
+            android:textSize="19sp"
+            />
+        <EditText 
+            android:layout_width="0dp"
+            android:id="@+id/mycarnum"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/userinfo_shap"
+            />
+        
+    </LinearLayout>
+    
+          <Button
+         android:id="@+id/save_submit"
+         android:layout_marginTop="30dp"
+         android:layout_gravity="center_horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="4dp"
+         android:background="@drawable/btn_quick_register"
+         android:onClick="enter"
+         android:text="提交" />
+    
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    
+</LinearLayout>

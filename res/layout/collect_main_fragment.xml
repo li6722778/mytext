@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+     >
+     
+   
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+         <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎登陆数据采集界面"
+        android:textSize="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   android:layout_centerInParent="true"
+    
+    >
+     <Button
+        android:id="@+id/collectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_add_accounts"
+        android:clickable="true"
+        android:onClick="pay"
+        android:text="信息采集"
+        android:textColor="@color/white" />
+
+<Button
+                android:id="@+id/collectHisBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                  android:background="@drawable/btn_quick_register"
+                android:text="采集记录"
+                android:clickable="true"
+                android:onClick="pay"
+                android:textColor="@color/white" />
+    
+    
+</LinearLayout>
+</RelativeLayout>
+   
+</LinearLayout>

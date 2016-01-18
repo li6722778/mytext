@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" 
+    android:background="@color/white"
+ android:padding="5dp"
+   
+    >
+
+   
+    <ImageView
+        android:id="@+id/addhistory_img"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/imglistdemo"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:id="@+id/order_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/maptitlebtn"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/delete_24"
+        
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/addhistory_img"
+    
+        android:orientation="vertical"
+        android:padding="2dp"
+         >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    
+    >
+      <TextView
+                android:id="@+id/einfo_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:clickable="false"
+                android:drawableLeft="@drawable/serviceicon"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+    
+        <TextView
+            android:id="@+id/parkname_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:text="订单号"
+            android:textColor="@color/listdarkfont"
+            android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+             <TextView
+            android:id="@+id/txt_pay_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="2015-12-12"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+          <TextView
+            android:id="@+id/txt_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="2015-12-12"
+            android:textColor="@color/grey"
+        android:layout_marginLeft="15dp"
+            android:textSize="12sp" />
+            
+        </LinearLayout>
+ <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+      
+            
+            <TextView
+            android:id="@+id/txt_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+android:layout_marginTop="2dp"
+            android:text="2015-12-12"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+            
+        </LinearLayout>
+       
+    </LinearLayout>
+
+</RelativeLayout>

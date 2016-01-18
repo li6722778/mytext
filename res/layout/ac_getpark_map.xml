@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+             android:id="@+id/id_getpark_image"
+                android:background="@drawable/btn_add_accounts"
+                android:text="上传图片"
+                android:textColor="@color/mainbg"
+                android:textSize="16dp"
+                android:visibility="visible" />
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/shap_addimage_border"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <FrameLayout
+                    android:id="@+id/id_getpark_bmapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="2dp"
+                    android:clickable="true" />
+
+                <LinearLayout
+                    android:id="@+id/getpark_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:visibility="visible" >
+
+                    <!-- <Button
+                        android:id="@+id/id_getpark_out"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_quick_register"
+                        android:onClick="true"
+                        android:text="出口"
+                        android:textColor="@color/mainbg"
+                        android:textSize="16dp"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/id_getpark_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_quick_register"
+                        android:onClick="true"
+                        android:text="入口"
+                        android:textColor="@color/mainbg"
+                        android:textSize="16dp"
+                        android:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/id_getpark_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_quick_register"
+                        android:onClick="true"
+                        android:text="取消"
+                        android:textColor="@color/mainbg"
+                        android:textSize="16dp"
+                        android:visibility="visible" /> -->
+                        
+                           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 
+                android:orientation="horizontal"
+                
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    
+                    >
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        
+                        android:background="#FFB90F"
+                        />
+                     <TextView
+                    android:id="@+id/id_getpark_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                        android:layout_weight="5"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="出口" />
+                    
+                </LinearLayout>
+
+                <LinearLayout 
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    
+                    ></LinearLayout>
+
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    
+                    >
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                       
+                        android:background="#32cd32"
+                        />
+                     <TextView
+                    android:id="@+id/id_getpark_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                      
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="入口" />
+                    
+                </LinearLayout>
+                
+                  <LinearLayout 
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    
+                    ></LinearLayout>
+                
+                 <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    
+                    >
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                      
+                        android:background="#F08080"
+                        />
+                     <TextView
+                    android:id="@+id/id_getpark_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                       
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="取消" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+                        
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+      
+    </LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/map_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+  
+
+        
+        
+        
+        <CheckBox
+            android:id="@+id/add_map_mode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_mapviewmode"
+            android:button="@null" />
+
+        
+        
+        <CheckBox
+            android:id="@+id/add_map_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_mapaddmark"
+            android:button="@null" 
+            android:visibility="gone"/>
+       
+    </LinearLayout>
+    
+     <RelativeLayout 
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+         android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+      android:id="@+id/map_toolbar_move"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+         >
+         
+          <LinearLayout
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+      
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+         >
+
+  
+
+        <TextView
+            android:id="@+id/map_move_up"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/p_top"
+            android:button="@null" />
+        
+        
+        
+        <TextView
+            android:id="@+id/map_move_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/p_bottom"
+            android:button="@null" />
+
+       
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/map_toolbar_move_hor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+     
+         >
+
+  
+
+        <TextView
+            android:id="@+id/map_move_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/p_left"
+            android:button="@null" />
+        
+        
+        
+        <TextView
+            android:id="@+id/map_move_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+       android:layout_marginLeft="40dp"
+            
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/p_right"
+            android:button="@null" />
+
+       
+    </LinearLayout>
+         
+     </RelativeLayout>
+     
+    <LinearLayout
+                    android:id="@+id/getpark_marker_clic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:visibility="gone" >   
+                  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 
+                android:orientation="horizontal"
+                
+                >
+               
+
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    
+                    >
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                       
+                        android:background="#32cd32"
+                        />
+                     <TextView
+                    android:id="@+id/id_getpark_mark_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                      
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="移除" />
+                    
+                </LinearLayout>
+                
+                  <LinearLayout 
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    
+                    ></LinearLayout>
+                
+                 <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    
+                    >
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                      
+                        android:background="#F08080"
+                        />
+                     <TextView
+                    android:id="@+id/id_getpark_marker_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                       
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="关闭" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+                        
+                </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/park_map_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btn_maplocal_park"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_maplocal" />
+
+        
+
+        <ImageButton
+            android:id="@+id/zoomout_park"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_zoomout" />
+
+        <ImageButton
+            android:id="@+id/zoomin_park"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_zoomin" />
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mc.parking.client"
+    android:versionCode="1"
+    android:versionName="1.2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <uses-permission android:name="getui.permission.GetuiService.com.mc.parking.client" />
+    <!-- 自定义权限 -->
+    <permission
+        android:name="getui.permission.GetuiService.com.mc.parking.client"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <application
+        android:name="com.mc.parking.client.PackingApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Start" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="z9OlPinGNmUXjC5175qRoo5U" />
+
+        <service
+            android:name="com.baidu.navi.location.f"
+            android:enabled="true" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置第三方应用参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="sypp1KKD1s8kwpMH4iehf5" /> <!-- 替换为第三方应用的APPID -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="mLHCs106pV6haRBXcxrT03" /> <!-- 替换为第三方应用的APPKEY -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="c4vRukqGfe5kY5SHNyyxg" /> <!-- 替换为第三方应用的APPSECRET -->
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+        </service>
+
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name="com.mc.parking.receiver.PushReceiver"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 替换为action android:name="com.igexin.sdk.action.第三方应用APPID" -->
+                <action android:name="com.igexin.sdk.action.sypp1KKD1s8kwpMH4iehf5" />
+            </intent-filter>
+        </receiver>
+
+        <!-- =========================================================================== -->
+
+        <activity
+            android:name="com.mc.parking.client.ui.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent" 
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.NavigationActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/App.Start" >
+        </activity>
+         <activity
+            android:name="com.mc.parking.client.ui.admin.AdminServiceActivity"
+             android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar">
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.ParkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.YuyueActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.ImagePagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/App.Start" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.RegActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.RegDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.DoubleConfirmActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.OffineMapActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.OrderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.OrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.UserInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.UserInfoSysConfActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.UserInfoSecrActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.WebPortalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.admin.AdminHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.PayWayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.CouponDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.CouponScanActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/App.Start" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.UploadPhotoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.admin.AddParkInfoHistoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.admin.AddParkInfoDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.admin.AdminGetParkInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.TakecashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.admin.GalleryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/App.Start" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.GuideAcitivity"
+            android:exported="false" >
+        </activity>
+          <activity
+            android:name="com.mc.parking.client.ui.ActivityHomeList"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.MainActivity"
+            android:exported="false" >
+        </activity>
+         <activity
+            android:name="com.mc.parking.client.ui.IndexActivity"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.zxing.camera.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.admin.ChangeParkPriceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.addpic.utils.NetWorkActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.Reg_noticeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.Get_coupnActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.MapParkListviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+         <activity
+            android:name="com.mc.parking.client.ui.UseraccountAcitivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+          
+           <activity
+            android:name="com.mc.parking.client.ui.CroppictureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.WebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信paY -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        
+         <activity
+            android:name="com.mc.parking.client.ui.EditeUserInfor"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+        <activity
+            android:name="com.mc.parking.client.ui.AdsWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.actionbar" >
+        </activity>
+
+        <!--
+        <receiver
+            android:name="net.sourceforge.simcpux.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <receiver android:name="com.mc.parking.receiver.ShareBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="success" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

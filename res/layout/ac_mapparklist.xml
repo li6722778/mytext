@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+     >
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:background="@color/gray_white"
+    >
+    
+   <ImageButton
+            android:id="@+id/topbarBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="backTo"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/maptitlebtn"
+            android:src="@drawable/btn_back" />
+
+        <FrameLayout
+            android:id="@+id/topbarCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/topbarBack" >
+
+            <TextView
+                android:id="@+id/topbar_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="停车场列表"
+                android:singleLine="true"
+                android:layout_marginRight="65dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </FrameLayout>
+        
+          <FrameLayout
+            android:id="@+id/topbarRightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+            
+           <ImageButton
+                android:id="@+id/topbarRightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/star"
+                android:button="@null" 
+                android:visibility="gone" />
+
+        </FrameLayout>
+        
+           <FrameLayout
+            android:id="@+id/maplistRightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+            
+           <ImageButton
+                android:id="@+id/maplistButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/star"
+                android:button="@null" 
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+   
+    
+</RelativeLayout>
+    
+  <com.mc.parking.client.layout.PullToRefreshListView
+                    android:id="@+id/history_pull_to_refresh_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:dividerHeight="1dp"
+                    android:cacheColorHint="@android:color/white" />
+    
+    
+    
+</LinearLayout>

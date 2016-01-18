@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_maincontent"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <RatingBar
+        android:id="@+id/comments_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:stepSize = "0.5"
+        style="@style/MyRatingBar"
+        android:rating="5" />
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        style="@style/accountInputBorder"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"        
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/comment"
+            style="@style/loginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="在此处输入评论"
+            android:inputType="text" />
+    
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/submit_comment"
+        style="@style/accountButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_add_accounts"
+        android:text="评论" />
+
+    <Button
+        android:id="@+id/back"
+        style="@style/accountButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_add_accounts"
+        android:text="返回" />
+</LinearLayout>
+
+</LinearLayout>

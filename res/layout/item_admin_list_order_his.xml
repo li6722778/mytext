@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contentbg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <Button
+        android:id="@+id/order_reject"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/order_accept"
+        android:background="@drawable/bluesquare"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="结账放行"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:visibility="gone"
+         />
+
+    <LinearLayout
+        android:id="@+id/context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/order_accept"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单号："
+                android:textColor="@color/listdarkfont"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/order_string"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="来自订单号"
+                android:textColor="@color/listdarkfont"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用    户："
+                android:textColor="@color/listdarkfont"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/order_userid"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="13131313"
+                android:textColor="@color/listdarkfont"
+                android:textSize="16sp" />
+        </LinearLayout>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    
+    >
+     <TextView
+            android:id="@+id/order_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2015-12-12"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+     
+     
+</LinearLayout>
+        <TextView
+            android:id="@+id/order_item_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="hahah"
+            android:singleLine="true"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color"
+    android:orientation="vertical"
+    tools:context=".ActivityHomeList1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/normal_space"
+            android:text=""
+            android:textSize="@dimen/title_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/detail_activity_home_list1_rb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_left"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="商户"
+                    android:textColor="@drawable/btn_text_color_selector" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_right"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="团购"
+                    android:textColor="@drawable/btn_text_color_selector" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/detail_activity_home_list1_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:padding="9dp"
+            android:src="@drawable/ic_web_back" />
+
+        <FrameLayout
+            android:id="@+id/detail_activity_home_list1_search_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/navibar_icon_search" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/detail_activity_home_list1_0" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ListView 
+                        android:id="@+id/list_type"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        
+                        ></ListView>
+ <!-- <ScrollView 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="附近"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="热门商区"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="和平区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="南开区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="河西区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="河东区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="河北区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="滨海新区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="红桥区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="西青区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="东丽区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="北辰区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="武清区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                    <TextView 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="津南区"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+               
+                </LinearLayout>
+            </ScrollView> -->
+            <ListView 
+                android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:id="@+id/id_productlist"
+                ></ListView>
+               <!--  <com.mc.parking.client.layout.VerticalScrollView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                     >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <include layout="@layout/detail_activity_home_list1_1" />
+                    </LinearLayout>
+                </com.mc.parking.client.layout.VerticalScrollView> -->
+                </LinearLayout>
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <include layout="@layout/detail_activity_home_list1_filter1"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/title_shadow" />
+    </FrameLayout>
+
+</LinearLayout>

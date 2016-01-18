@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="degrees">  
+    <item>1小时以内</item>  
+    <item>2小时以内</item>  
+    <item>3小时以内</item>  
+    <item>4小时以内</item>  
+    <item>5小时以内</item> 
+    <item>6小时以内</item> 
+</string-array>  
+</resources>

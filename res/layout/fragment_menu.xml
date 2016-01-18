@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sliding_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:descendantFocusability="blocksDescendants" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo_yunpan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/personalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <ImageView
+                    android:id="@+id/personalImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/avatar_default" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/menu_nologin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/menu_nologin"
+                        android:textColor="#ffccccc6"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/menu_logined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/menu_logined_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="4dp"
+                            android:text="@string/menu_username"
+                            android:textColor="#ffccccc6" />
+
+                        <TextView
+                            android:id="@+id/menu_logined_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:text="@string/menu_carnumber"
+                            android:textColor="#ffccccc6"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:id="@+id/admin_flagImg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:src="@drawable/adminbadge"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/packingadmin"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/parkadmin"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_managepark" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+               android:layout_marginLeft="40dp"
+                    android:text="@string/menu_parkadmin"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/coupon"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_coupon"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_reward" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                     android:layout_marginLeft="40dp"
+                    android:text="@string/menu_coupon"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/packinghistory"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_transfer"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_history" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/menu_parkdetail"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/getparkinfo"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_setting1"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_transfer" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                  android:layout_marginLeft="40dp"
+                    android:text="@string/menu_getparkinfo"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/admin_change_price"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_setting2"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_priceadjust" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                  android:layout_marginLeft="40dp"
+                    android:text="@string/menu_addparker"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/getcash"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_setting3"
+                    style="@style/menuItemIcon"
+                    android:src="@@drawable/icon_wallet" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+               android:layout_marginLeft="40dp"
+                    android:text="@string/menu_getcash"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/AddParkHistory"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_setting4"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_history" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+             android:layout_marginLeft="40dp"
+                    android:text="@string/menu_history"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/offineMap"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_offlinemap" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                   android:layout_marginLeft="40dp"
+                    android:text="@string/menu_offlinemap"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/persondetail"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@id/iv_setting"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_setting" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_marginLeft="40dp"
+                    android:text="我的账号"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:id="@+id/share"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true" 
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/menu_share" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                     android:layout_marginLeft="40dp"
+                    android:text="@string/menu_share"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+<RelativeLayout
+                android:id="@+id/service"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true"
+                android:visibility="gone"
+                 >
+
+                <ImageView
+                    android:id="@+id/iv_logservice"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_transfer" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                   android:layout_marginLeft="40dp"
+                    android:text="@string/menu_service"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/exitapp"
+                style="@style/menuItem"
+                android:layout_height="65.0dip"
+                android:background="@drawable/item_slidingmenu_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_logout" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/menu_quit"
+                    android:textColor="#ffccccc6"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.3299866dip"
+                android:background="#ff1c1c1b" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </Button>
+    </RelativeLayout>
+
+</ScrollView>

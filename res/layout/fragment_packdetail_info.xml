@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/mainbg" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/packdetail_info_s1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/contentbg"
+            android:clickable="false"
+            android:paddingBottom="15dp"
+            
+             >
+
+            <RelativeLayout
+                android:id="@+id/parkinforelate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/packdetail_img_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/btn_goto" />
+
+                <TextView
+                    android:id="@+id/parkinfo_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/packdetail_img_s1"
+                    android:padding="15dp"
+                    android:singleLine="false"
+                    android:text="三小时内5元"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/parkinforelate"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/packdetail_img_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/btn_goto" />
+
+                <LinearLayout
+                    android:id="@+id/service_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_toRightOf="@id/packdetail_img_s2"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/packdetail_info_s1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/gotoPayButton"
+                style="@style/accountButtonStyle"
+                android:background="@drawable/btn_add_accounts"
+                android:text="@string/bookparkok" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

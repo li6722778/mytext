@@ -1,0 +1,555 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainbg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <!--
+    <ImageButton
+        android:id="@+id/order_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/maptitlebtn"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/delete_24" />
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="订单号"
+            android:textColor="@color/listdarkfont"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/order_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1101"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_layout"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="金额"
+            android:textColor="@color/listdarkfont"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/order_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1000"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_layout2"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="日期"
+            android:textColor="@color/listdarkfont"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/order_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2015-12-12"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/contentbg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+             >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/take_cash_codename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11dp"
+                    android:text="交易单号:" />
+
+                <TextView
+                    android:id="@+id/order_item_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:text="555335" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="11dp"
+                    android:text="提现:" />
+
+                <TextView
+                    android:id="@+id/order_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:text="5553" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/line2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+             >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ask_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cashsubmit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/parkordermargintop"
+                    android:text="提现申请成功"
+                    android:textSize="@dimen/parkordertextsize" />
+
+                <TextView
+                    android:id="@+id/ask_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06-04-2015"
+                    android:textSize="@dimen/parkordertextsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/handle_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cashprocessgrey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/parkordermargintop"
+                    android:text="银行处理中"
+                    android:textSize="@dimen/parkordertextsize" />
+
+                <TextView
+                      android:id="@+id/handle_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/parkordertextsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                      android:id="@+id/over_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cashsucessgrey" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/parkordermargintop"
+                    android:text="提现成功"
+                    android:textSize="@dimen/parkordertextsize" />
+
+                <TextView
+                      android:id="@+id/over_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/parkordertextsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"     
+                android:gravity="center"
+                android:orientation="vertical"          
+                >
+                <ImageView 
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cashsubmit"
+                    android:layout_gravity="center"
+                    />
+        
+            </LinearLayout>
+              <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"             
+                >
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line" />
+                
+            </LinearLayout>
+              <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"     
+                android:gravity="center"
+                android:orientation="vertical"          
+                >
+                <ImageView 
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cashsubmit"
+                    android:layout_gravity="center"
+                    />
+           
+            </LinearLayout>
+              <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"                       
+                >
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                     android:layout_marginTop="10dp"
+                    android:background="@drawable/line" />
+                
+            </LinearLayout>
+              <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"     
+                android:gravity="center"
+                android:orientation="vertical"          
+                >
+                <ImageView 
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cashsubmit"
+                    android:layout_gravity="center"
+                    />
+              
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+        -->
+        <!--
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"     
+                android:gravity="center"
+                android:orientation="vertical"          
+                >
+                   <TextView 
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现申请提交成功"
+                android:textSize="@dimen/parkordertextsize"
+              
+                />
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="06-04-2015"
+                       android:textSize="@dimen/parkordertextsize"
+                       />
+        
+            </LinearLayout>
+              <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"             
+                >
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/line" />
+                
+            </LinearLayout>
+              <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"     
+                android:gravity="center"
+                android:orientation="vertical"          
+                >
+                <ImageView 
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cashsubmit"
+                    android:layout_gravity="center"
+                    />
+           
+            </LinearLayout>
+              <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"                       
+                >
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                     android:layout_marginTop="10dp"
+                    android:background="@drawable/line" />
+                
+            </LinearLayout>
+              <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"     
+                android:gravity="center"
+                android:orientation="vertical"          
+                >
+                <ImageView 
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cashsubmit"
+                    android:layout_gravity="center"
+                    />
+              
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+        -->
+
+
+        <!--
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            
+            >
+              
+              
+              
+              <LinearLayout 
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.5"
+                  android:gravity="left"
+                  android:orientation="vertical"
+                  >
+                 
+                
+                  
+              </LinearLayout>
+              
+              <LinearLayout 
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  >
+                   <TextView 
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hahahaa"
+                android:textSize="@dimen/parkordertextsize"
+              
+                />
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="06-04-2015"
+                       android:textSize="@dimen/parkordertextsize"
+                       />
+                  
+              </LinearLayout>
+              
+                 <LinearLayout 
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.5"
+                  android:gravity="left"
+                  android:orientation="vertical"
+                  >
+                 
+                
+                  
+              </LinearLayout>
+                
+                
+                  <LinearLayout 
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  >
+                   <TextView 
+              
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hahahaa"
+                android:textSize="@dimen/parkordertextsize"
+              
+                />
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="06-04-2015"
+                       android:textSize="@dimen/parkordertextsize"
+                       />
+                  
+              </LinearLayout>
+            
+            
+        </LinearLayout>
+        -->
+
+    </LinearLayout>
+
+</RelativeLayout>
