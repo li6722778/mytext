@@ -480,14 +480,8 @@ public class MapFragment extends Fragment {
 		btn_maplocal.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-
-				Intent intent=new Intent();
-				intent.setClass(getActivity(), IndexActivity.class);
-				startActivity(intent);
-				
-				
-				
-				//center2myLoc();
+	
+				center2myLoc();
 			}
 		});
 

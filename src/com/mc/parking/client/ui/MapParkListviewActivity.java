@@ -52,7 +52,7 @@ public class MapParkListviewActivity extends ActionBaseActivity implements
 		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,
 				R.layout.actionbar_topbar);
 		TextView titleView = (TextView) findViewById(R.id.topbar_title);
-		titleView.setText("附近停车场");
+		titleView.setText("附近门店");
 		listview = (PullToRefreshListView) findViewById(R.id.history_pull_to_refresh_listview);
 		listview.setPullLoadEnable(false);
 	listview.setPullRefreshEnable(true);
@@ -166,7 +166,7 @@ public class MapParkListviewActivity extends ActionBaseActivity implements
 		ViewHolder viewHolder;
 		List<TParkInfo_LocEntity> mydata = new ArrayList<TParkInfo_LocEntity>();
 
-		// 0--本地数据库的绑定1--网络数据库的绑定
+		// 0--鏈湴鏁版嵁搴撶殑缁戝畾1--缃戠粶鏁版嵁搴撶殑缁戝畾
 
 		public void getdata(List<TParkInfo_LocEntity> mydata) {
 			this.mydata = mydata;
@@ -266,9 +266,9 @@ public class MapParkListviewActivity extends ActionBaseActivity implements
 						.setText(mydata.get(position).parkInfo.parkname);
 
 				if (mydata.get(position).parkInfo.feeType == 2) {
-					viewHolder.paymode.setText("计次收费");
+					viewHolder.paymode.setText("计时");
 				} else {
-					viewHolder.paymode.setText("分段收费");
+					viewHolder.paymode.setText("计次");
 				}
 				viewHolder.detail.setText(mydata.get(position).parkInfo.detail);
 				viewHolder.distance.setText(" 距离"
@@ -371,7 +371,7 @@ public class MapParkListviewActivity extends ActionBaseActivity implements
 				}
 				if (mydata == null || mydata.size() <= 0) {
 					Toast.makeText(MapParkListviewActivity.this,
-							"未查询到结果",
+							"没有更多数据",
 							Toast.LENGTH_LONG).show();
 					
 					listview.onRefreshComplete();
@@ -385,7 +385,7 @@ public class MapParkListviewActivity extends ActionBaseActivity implements
 					else
 						adapter.loadMore(mydata);
 				}
-				//显示分页信息
+				//鏄剧ず鍒嗛〉淇℃伅
 				UIUtils.displayPaginationInfo(MapParkListviewActivity.this, CURRENT_PAGE, Constants.PAGINATION_PAGESIZE, arg0.getRowCount() );
 				if (listview.isRefreshing()) {
 					listview.onRefreshComplete();
@@ -408,7 +408,7 @@ public class MapParkListviewActivity extends ActionBaseActivity implements
 			getParkListDate(UIUtils.currentlatlng.latitude,UIUtils.currentlatlng.longitude);
 			else
 			{
-				Toast.makeText(getApplicationContext(), "查询失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(getApplicationContext(), "加载出错", Toast.LENGTH_SHORT).show();
 				finish();
 			}
 		

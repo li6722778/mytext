@@ -70,11 +70,11 @@ public class IndexActivity extends BaseActivity implements OnClickListener,
 	private TextView mIndexPrice = null;
 	private TextView mIndexRawPrice = null;
 
-	// =============‰∏≠ÈÉ®ÂØºËà™Ê†èÊ®°Âù?=====
+	// ==================
 	private ImageButton shake, baidumapbnt, shake1;
 	private Intent mIntent;
 
-	// ============== ÂπøÂëäÂàáÊç¢ ===================
+	// ============== topπ„∏Ê ===================
 	private JazzyViewPager mViewPager = null;
 	/**
 	 * Ë£ÖÊåáÂºïÁöÑImageViewÊï∞ÁªÑ
@@ -249,7 +249,7 @@ public class IndexActivity extends BaseActivity implements OnClickListener,
 				// mIntent = new Intent(IndexActivity.this,
 				// CircleActivity.class);
 				// startActivity(mIntent);
-				Toast.makeText(getApplicationContext(), "ÊöÇÊú™Âº?ÊîæÔºÅ",
+				Toast.makeText(getApplicationContext(), "∫«∫«",
 						Toast.LENGTH_SHORT).show();
 				break;
 			case R.id.main_hot_view:
@@ -505,99 +505,110 @@ public class IndexActivity extends BaseActivity implements OnClickListener,
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(1);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962820020150113032647.jpg");
-		mItemData.setPrice("Ôø?79.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product1);
+		mItemData.setPrice("£§79.00");
 		mStormListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(2);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962801820150113043051.jpg");
-		mItemData.setPrice("Ôø?89.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product2);
+		mItemData.setPrice("£§89.00");
 		mStormListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(3);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962820020150113033216.jpg");
-		mItemData.setPrice("Ôø?99.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product3);
+		mItemData.setPrice("£§99.00");
 		mStormListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(4);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962820020150113024429.jpg");
-		mItemData.setPrice("Ôø?109.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product4);
+		mItemData.setPrice("£§109.00");
 		mStormListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(5);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962801820150113042950.JPG");
-		mItemData.setPrice("Ôø?119.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product5);
+		mItemData.setPrice("£§119.00");
 		mStormListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(6);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962801820150113043123.jpg");
-		mItemData.setPrice("Ôø?129.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product6);
+		mItemData.setPrice("£§129.00");
 		mStormListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(7);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962820020150113033102.jpg");
-		mItemData.setPrice("Ôø?139.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product7);
+		mItemData.setPrice("£§139.00");
 		mStormListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(8);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962820020150113015902.jpg");
-		mItemData.setPrice("Ôø?69.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product8);
+		mItemData.setPrice("£§69.00");
 		mPromotionListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(9);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962820020150113015526.jpg");
-		mItemData.setPrice("Ôø?99.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product9);
+		mItemData.setPrice("£§99.00");
 		mPromotionListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(10);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962820020150113031428.jpg");
-		mItemData.setPrice("Ôø?109.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product10);
+		mItemData.setPrice("£§109.00");
 		mPromotionListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(11);
 		mItemData
-				.setImageUrl("http://192.168.0.2:126/Fujian/083962820020150113032757.jpg");
-		mItemData.setPrice("Ôø?119.00");
+				.setImageUrl("drawable://"
+						+ R.drawable.product10);
+		mItemData.setPrice("£§119.00");
 		mPromotionListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(12);
 		mItemData.setImageUrl("drawable://"
-				+ R.drawable.abc_ab_share_pack_holo_dark);
-		mItemData.setPrice("129.00");
+				+ R.drawable.product9);
+		mItemData.setPrice("£§129.00");
 		mPromotionListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(13);
 		mItemData.setImageUrl("drawable://"
-				+ R.drawable.abc_ab_share_pack_holo_dark);
-		mItemData.setPrice("139.00");
+				+ R.drawable.product2);
+		mItemData.setPrice("£§139.00");
 		mPromotionListData.add(mItemData);
 
 		mItemData = new IndexGalleryItemData();
 		mItemData.setId(14);
 		mItemData.setImageUrl("drawable://"
-				+ R.drawable.abc_ab_share_pack_holo_dark);
-		mItemData.setPrice("149.00");
+				+ R.drawable.product1);
+		mItemData.setPrice("£§149.00");
 		mPromotionListData.add(mItemData);
 	}
 
