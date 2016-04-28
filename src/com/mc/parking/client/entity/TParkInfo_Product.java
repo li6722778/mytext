@@ -73,7 +73,9 @@ public class TParkInfo_Product implements Serializable {
 
 	@DatabaseField
 	public String updatePerson;
-
+	
+	
+     public int selectnum;
 
 
 }

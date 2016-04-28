@@ -1,7 +1,12 @@
 package com.mc.parking.client.entity;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
+
+
+
+
 
 import com.google.gson.annotations.Expose;
 
@@ -43,11 +48,13 @@ public class ChebolePayOptions implements Serializable{
 
 	public String keepToDate;
 	
-	public List<TParkService> selectedServices;
+
 	
 	//已经选择服务的总费用
 	public double serviceTotalFee;
 	
 	public String userAllowanceDescription;
+	
+	public List<TParkInfo_Product> allProducts;
 
 }

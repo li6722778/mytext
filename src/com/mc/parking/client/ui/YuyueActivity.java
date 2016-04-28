@@ -223,6 +223,11 @@ public class YuyueActivity extends ActionBaseActivity {
 		lijianReala = (RelativeLayout) findViewById(R.id.lijian);
 		selecttext = (TextView) findViewById(R.id.selectservice);
 		// 增值服务布局
+		if(getIntent().getExtras().get("price")!=null)
+		priceEntity=(ChebolePayOptions) getIntent().getExtras().get("price");
+		else
+			priceEntity=new ChebolePayOptions();
+		
 
 		final TextView zfbtextView = (TextView) findViewById(R.id.use_zfb);
 		TextView name = (TextView) findViewById(R.id.parkdetail_name);
@@ -403,8 +408,8 @@ public class YuyueActivity extends ActionBaseActivity {
 		modefybtn = (Button) findViewById(R.id.add_parkinfo_modefybtn);
 		yudingButton = (Button) findViewById(R.id.yudingButton);
 		yuyue_detail.setText("" + parkInfo.detail);
-		getCalculatedPrice(orderInfoFromDetailPage);
-
+		//getCalculatedPrice(orderInfoFromDetailPage);
+		BindData();
 	}
 
 	public int getSelectedIndex(String payway) {
@@ -466,6 +471,7 @@ public class YuyueActivity extends ActionBaseActivity {
 
 	}
 
+	//获得价格
 	private void getCalculatedPrice(final OrderEntity orderInfo) {
 
 		StringBuffer parastring = new StringBuffer("?s=1");
@@ -574,7 +580,7 @@ public class YuyueActivity extends ActionBaseActivity {
 				line2.setVisibility(View.GONE);
 			}
 			// 判断service
-			if (priceEntity.selectedServices != null && priceEntity.selectedServices.size() > 0) {
+			/*if (priceEntity.selectedServices != null && priceEntity.selectedServices.size() > 0) {
 				fuwulayout.setVisibility(View.VISIBLE);
 				View view1 = findViewById(R.id.line33);
 				view1.setVisibility(View.VISIBLE);
@@ -591,7 +597,7 @@ public class YuyueActivity extends ActionBaseActivity {
 				View view1 = findViewById(R.id.line33);
 				view1.setVisibility(View.GONE);
 
-			}
+			}*/
 			// 显示服务选择界面
 			if (firstshow) {
 				showservicedialog();
@@ -942,7 +948,7 @@ public class YuyueActivity extends ActionBaseActivity {
 
 	}
 
-	private void showservicedialog() {
+	private void showservicedialog() {/*
 
 		// TODO Auto-generated method stub
 		if (priceEntity.selectedServices != null && priceEntity.selectedServices.size() > 0) {
@@ -979,5 +985,5 @@ public class YuyueActivity extends ActionBaseActivity {
 			// 弹出完毕
 		}
 
-	}
+	*/}
 }

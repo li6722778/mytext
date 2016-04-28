@@ -110,7 +110,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_weight="1.2"
                         android:gravity="center"
-                        android:text="停车场名称" />
+                        android:text="门店名称" />
 
                     <EditText
                         android:id="@+id/id_getimage_parkname"
@@ -134,7 +134,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_weight="1.2"
                         android:gravity="center"
-                        android:text="停车场地址" />
+                        android:text="门店地址" />
                     
                     <EditText 
                         android:id="@+id/id_getimage_city"
@@ -153,6 +153,98 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:text="门店类别" />
+
+                    <EditText
+                       
+                        style="@style/getimageEditText"
+                        android:layout_weight="3.3" />
+                </LinearLayout>
+                
+                
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                     >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:text="法人代表" />
+
+                    <EditText
+                       
+                        style="@style/getimageEditText"
+                        android:layout_weight="3.3" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:text="管理公司" />
+
+                    <EditText
+                       
+                        style="@style/getimageEditText"
+                        android:layout_weight="3.3" />
+                </LinearLayout>
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+           
+                     <RadioButton
+               android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="是否配送"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="5dp"
@@ -167,6 +259,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@drawable/contentbg"
+                android:visibility="gone"
                 android:orientation="vertical" >
 
                 <LinearLayout

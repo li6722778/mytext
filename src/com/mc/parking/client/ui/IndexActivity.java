@@ -27,6 +27,8 @@ import com.mc.parking.zxing.camera.MipcaActivityCapture;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import android.app.FragmentManager;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -36,6 +38,7 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
@@ -178,6 +181,7 @@ public class IndexActivity extends BaseActivity implements OnClickListener,
 		baidumapbnt = (ImageButton) findViewById(R.id.index_nearpark_btn);
 
 		LogeInButton = (ImageButton) findViewById(R.id.index_order_btn);
+		
 		MyproductBn = (ImageButton) findViewById(R.id.index_collect_btn);
 
 		ShowProductBut = (ImageButton) findViewById(R.id.index_mainactivity_btn);
@@ -249,12 +253,12 @@ public class IndexActivity extends BaseActivity implements OnClickListener,
 				// mIntent = new Intent(IndexActivity.this,
 				// CircleActivity.class);
 				// startActivity(mIntent);
-				Toast.makeText(getApplicationContext(), "呵呵",
-						Toast.LENGTH_SHORT).show();
+				 mIntent = new Intent(IndexActivity.this, YuyueActivitynew.class);
+				  
+				  startActivity(mIntent);
 				break;
 			case R.id.main_hot_view:
-				Intent inte = new Intent();
-
+				
 				/*
 				 * String[] datainfo = {
 				 * currentarraya.getJSONObject(0).getString( "BRANDBRAND"),
@@ -273,7 +277,27 @@ public class IndexActivity extends BaseActivity implements OnClickListener,
 
 				break;
 			case R.id.index_collect_btn:
+				BaseDialogFragment confirmDialog = new BaseDialogFragment();
+				confirmDialog
+						.setMessage("预警消息：你购买的放心产品存在问题，请及时与销售企业联系，了解详情！");
+				confirmDialog.setPositiveButton("确定",
+						new DialogInterface.OnClickListener() {
+							public void onClick(DialogInterface dialog, int id) {
+								
+							}
+						});
+				confirmDialog.show(getFragmentManager(), "");
+				
+				NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(
+						getApplicationContext()).setSmallIcon(R.drawable.ic_launchernew)
+						.setContentTitle("预警消息")
+						.setContentText("你所购买的食品存在问题，点击获得详情");
 
+				mBuilder.setAutoCancel(true);// 自己维护通知的消失
+			
+				NotificationManager mNotificationManager = (NotificationManager) getApplication()
+						.getSystemService(Context.NOTIFICATION_SERVICE);
+				mNotificationManager.notify(0, mBuilder.build());
 				/*
 				 * mIntent = new Intent(IndexActivity.this,
 				 * PirvateListingActivity.class); startActivity(mIntent);

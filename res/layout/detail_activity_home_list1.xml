@@ -26,7 +26,9 @@
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                 >
 
                 <RadioButton
                     android:id="@+id/detail_activity_home_list1_rb"
@@ -102,7 +104,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical" >
 
-            <include layout="@layout/detail_activity_home_list1_0" />
+         <!--    <include layout="@layout/detail_activity_home_list1_0" /> -->
 
             <FrameLayout
                 android:layout_width="wrap_content"
