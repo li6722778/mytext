@@ -79,7 +79,7 @@ public class Constants {
 	//############only for test#################
 	//public static final String HTTP="http://localhost:9000";
 	//public static final String HTTP="http://192.168.0.118:9000";
-	public static final String HTTP="http://192.168.1.105:9000";
+	public static final String HTTP="http://192.168.1.123:9000";
 	public static final String MENUSHAREPAGE="http://www.chebolechina.com/app/scxz5/";
 
 	
