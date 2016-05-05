@@ -18,7 +18,7 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class ActionSheetDialog {
 	

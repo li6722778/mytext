@@ -15,8 +15,8 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.baidu.mapapi.search.core.PoiInfo;
-import com.mc.parking.client.R;
-import com.mc.parking.client.R.color;
+import com.mc.park.client.R;
+import com.mc.park.client.R.color;
 
 public class SearchListAdapter  extends BaseAdapter {
 	private List<PoiInfo>        _data;

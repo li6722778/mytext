@@ -12,7 +12,7 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class BaseDialogFragmentv4 extends DialogFragment
 {

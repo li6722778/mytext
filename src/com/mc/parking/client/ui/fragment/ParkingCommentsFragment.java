@@ -25,7 +25,7 @@ import android.widget.Toast;
 
 import com.baidu.navisdk.model.params.MsgDefine;
 import com.google.gson.reflect.TypeToken;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.OrderEntity;
 import com.mc.parking.client.entity.ParkCommentsEntity;
 import com.mc.parking.client.entity.TParkInfo_LocEntity;

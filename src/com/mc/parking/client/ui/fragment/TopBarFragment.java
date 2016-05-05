@@ -26,7 +26,7 @@ import android.widget.PopupWindow.OnDismissListener;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.mc.addpic.utils.Bimp;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfoEntity;
 import com.mc.parking.client.entity.TuserInfo;
 import com.mc.parking.client.layout.BaseDialogFragment;

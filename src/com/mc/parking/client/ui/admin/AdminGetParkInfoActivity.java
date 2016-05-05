@@ -27,7 +27,7 @@ import com.mc.addpic.utils.Bimp;
 import com.mc.parking.admin.upload.MultiPartStack;
 import com.mc.parking.admin.upload.MultiPartStringRequest;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfoEntity;
 import com.mc.parking.client.entity.TParkInfo_ImgEntity;
 import com.mc.parking.client.entity.TParkInfo_LocEntity;

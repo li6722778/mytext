@@ -1,6 +1,6 @@
 package com.mc.parking.client.layout;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 import android.app.Dialog;
 import android.content.Context;

@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class BaseViewPagerIndicator extends LinearLayout {
 	private static final int COLOR_TEXT_NORMAL = Color.rgb(124, 124, 124);

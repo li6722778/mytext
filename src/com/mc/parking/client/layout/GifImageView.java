@@ -7,7 +7,7 @@ import android.graphics.Movie;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class GifImageView extends View {
 	private long movieStart;

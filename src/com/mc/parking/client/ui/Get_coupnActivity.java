@@ -7,7 +7,7 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.LinearLayout;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TuserInfo;
 import com.mc.parking.client.utils.SessionUtils;
 

@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.adapter.ViewPagerAdapter;
 
 import android.app.Activity;

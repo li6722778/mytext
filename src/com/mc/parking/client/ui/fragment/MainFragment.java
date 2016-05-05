@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class MainFragment extends Fragment {
 

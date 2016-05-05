@@ -31,7 +31,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.google.zxing.ResultPoint;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.zxing.camera.CameraManager;
 
 /**

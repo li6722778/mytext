@@ -40,7 +40,7 @@ import android.widget.Toast;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.mc.addpic.utils.Bimp;
 import com.mc.addpic.utils.ImageItem;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfo_ImgEntity;
 import com.mc.parking.client.utils.DBHelper;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;

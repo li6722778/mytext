@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class ChangeParkPriceActivity extends FragmentActivity{
 	public ChangeParkPriceFragment myFragment=null;

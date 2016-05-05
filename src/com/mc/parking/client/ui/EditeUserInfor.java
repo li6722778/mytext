@@ -3,7 +3,7 @@ package com.mc.parking.client.ui;
 import com.android.volley.Response;
 import com.google.gson.reflect.TypeToken;
 import com.mc.addpic.utils.Bimp;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfoEntity;
 import com.mc.parking.client.entity.TuserInfo;
 import com.mc.parking.client.layout.BaseActivity;

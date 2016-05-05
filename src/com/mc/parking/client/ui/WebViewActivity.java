@@ -1,6 +1,6 @@
 package com.mc.parking.client.ui;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

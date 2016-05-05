@@ -27,7 +27,7 @@ import com.baidu.navisdk.BaiduNaviManager;
 import com.google.gson.reflect.TypeToken;
 import com.mc.parking.client.Constants;
 import com.mc.parking.client.PackingApplication;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TuserInfo;
 import com.mc.parking.client.entity.VersionEntity;
 import com.mc.parking.client.layout.BaseDialogFragment;

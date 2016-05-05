@@ -9,7 +9,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class CustomProgressDialog extends Dialog {
 	 private Context context = null;

@@ -11,7 +11,7 @@ import android.view.LayoutInflater;
 import android.widget.Toast;
 
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfoEntity;
 import com.mc.parking.client.utils.SessionUtils;
 

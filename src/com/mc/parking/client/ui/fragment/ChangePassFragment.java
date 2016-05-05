@@ -19,7 +19,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.gson.reflect.TypeToken;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TuserInfo;
 import com.mc.parking.client.layout.CustomProgressDialog;
 import com.mc.parking.client.layout.net.ComResponse;

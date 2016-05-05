@@ -2,7 +2,7 @@ package com.mc.addpic.utils;
 
 import java.lang.reflect.Method;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.layout.BaseToggleButton;
 
 

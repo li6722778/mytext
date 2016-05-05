@@ -16,7 +16,7 @@ import android.widget.ListView;
 import android.widget.OverScroller;
 import android.widget.ScrollView;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 public class StickyNavLayout extends LinearLayout {
 	private View mTop;
 	private View mNav;

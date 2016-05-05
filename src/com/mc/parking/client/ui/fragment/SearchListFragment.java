@@ -50,7 +50,7 @@ import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.dao.Dao;
 import com.mc.parking.client.Constants;
 import com.mc.parking.client.PackingApplication;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.HistoryEntity;
 import com.mc.parking.client.layout.BaseDialogFragment;
 import com.mc.parking.client.layout.PullToRefreshListView;

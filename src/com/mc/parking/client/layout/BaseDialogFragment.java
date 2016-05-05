@@ -14,7 +14,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class BaseDialogFragment extends DialogFragment {
 	private String message;

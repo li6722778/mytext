@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfo_LocEntity;
 import com.mc.parking.client.entity.TParkService;
 import com.mc.parking.client.ui.ParkActivity;

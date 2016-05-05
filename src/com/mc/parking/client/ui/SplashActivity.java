@@ -21,7 +21,7 @@ import android.widget.Toast;
 import com.igexin.sdk.PushManager;
 import com.mc.parking.client.Constants;
 import com.mc.parking.client.PackingApplication;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfoEntity;
 import com.mc.parking.client.entity.TuserInfo;
 import com.mc.parking.client.layout.ActionBaseActivity;

@@ -3,7 +3,7 @@ package com.mc.parking.client.utils;
 import java.io.ByteArrayOutputStream;
 
 import com.mc.parking.client.PackingApplication;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
 import com.tencent.mm.sdk.modelmsg.WXMediaMessage;
 import com.tencent.mm.sdk.modelmsg.WXWebpageObject;

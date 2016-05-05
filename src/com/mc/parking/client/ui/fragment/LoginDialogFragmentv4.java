@@ -25,7 +25,7 @@ import com.google.gson.reflect.TypeToken;
 import com.igexin.sdk.PushManager;
 import com.mc.parking.client.Constants;
 import com.mc.parking.client.PackingApplication;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfoEntity;
 import com.mc.parking.client.entity.TParkInfo_LocEntity;
 import com.mc.parking.client.entity.TuserInfo;

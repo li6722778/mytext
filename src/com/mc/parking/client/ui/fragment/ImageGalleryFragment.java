@@ -14,7 +14,7 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 
 import com.mc.parking.client.Constants.Extra;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfo_LocEntity;
 import com.mc.parking.client.ui.ImagePagerActivity;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;

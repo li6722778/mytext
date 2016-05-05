@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import com.google.gson.reflect.TypeToken;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TakeCashEntity;
 import com.mc.parking.client.layout.PullToRefreshListView;
 import com.mc.parking.client.layout.PullToRefreshListView.IXListViewListener;

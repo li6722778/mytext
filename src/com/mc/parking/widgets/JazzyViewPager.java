@@ -3,7 +3,7 @@ package com.mc.parking.widgets;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.nineoldandroids.view.ViewHelper;
 
 import android.content.Context;

@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.HashMap;
 
 import com.baidu.location.v;
+import com.mc.park.client.R;
 
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;

@@ -8,7 +8,7 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.Window;
 import android.widget.TextView;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.layout.ActionBaseActivity;
 import com.mc.parking.client.layout.BaseViewPagerIndicator;
 import com.mc.parking.client.ui.fragment.TakecashFragment;

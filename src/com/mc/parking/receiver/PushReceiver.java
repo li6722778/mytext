@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import com.igexin.sdk.PushConsts;
 import com.mc.parking.client.PackingApplication;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.PushMessage;
 import com.mc.parking.client.ui.MainActivity;
 import com.mc.parking.client.ui.OrderActivity;
@@ -33,12 +33,12 @@ public class PushReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		Bundle bundle = intent.getExtras();
-
+		Toast.makeText(context, "push one", Toast.LENGTH_LONG).show();
 		switch (bundle.getInt(PushConsts.CMD_ACTION)) {
 		case PushConsts.GET_MSG_DATA:
 
 			byte[] payload = bundle.getByteArray("payload");
-
+			Toast.makeText(context, "push two", Toast.LENGTH_LONG).show();
 			if (payload != null) {
 				String orderInfo = new String(payload);
 				//Toast.makeText(context,orderInfo, Toast.LENGTH_SHORT).show();
@@ -78,7 +78,6 @@ public class PushReceiver extends BroadcastReceiver {
 						{
 							resultIntent.putExtra("selectNum", 1);
 						}
-						
 						// ·â×°Ò»¸öIntent
 						PendingIntent resultPendingIntent = PendingIntent.getActivity(
 								context, 0, resultIntent,

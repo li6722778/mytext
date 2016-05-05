@@ -20,7 +20,7 @@ import java.net.URLEncoder;
 import com.android.volley.Request.Method;
 import com.google.gson.reflect.TypeToken;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.ChebolePayOptions;
 import com.mc.parking.client.entity.TParkInfo_LocEntity;
 import com.mc.parking.client.entity.TuserInfo;

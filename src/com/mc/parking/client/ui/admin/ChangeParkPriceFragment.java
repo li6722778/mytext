@@ -45,7 +45,7 @@ import com.mc.parking.admin.adrm.PhasedListener;
 import com.mc.parking.admin.adrm.PhasedSeekBar;
 import com.mc.parking.admin.adrm.SimplePhasedAdapter;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfoEntity;
 import com.mc.parking.client.entity.TParkInfo_ImgEntity;
 import com.mc.parking.client.entity.TuserInfo;

@@ -50,7 +50,7 @@ import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.stmt.DeleteBuilder;
 import com.mc.addpic.utils.Bimp;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfo_LocEntity;
 import com.mc.parking.client.layout.net.ComResponse;
 import com.mc.parking.client.layout.net.HttpRequestAni;

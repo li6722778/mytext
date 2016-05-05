@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mc.parking.client"
+    package="com.mc.park.client"
     android:versionCode="1"
     android:versionName="1.2.0" >
 
@@ -46,10 +46,10 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.autofocus" />
 
-    <uses-permission android:name="getui.permission.GetuiService.com.mc.parking.client" />
+    <uses-permission android:name="getui.permission.GetuiService.com.mc.park.client" />
     <!-- 自定义权限 -->
     <permission
-        android:name="getui.permission.GetuiService.com.mc.parking.client"
+        android:name="getui.permission.GetuiService.com.mc.park.client"
         android:protectionLevel="normal" >
     </permission>
 
@@ -80,13 +80,13 @@
         <!-- 配置第三方应用参数属性 -->
         <meta-data
             android:name="PUSH_APPID"
-            android:value="sypp1KKD1s8kwpMH4iehf5" /> <!-- 替换为第三方应用的APPID -->
+            android:value="aLtFayPtqr6gZmY5dHk0C4" /> <!-- 替换为第三方应用的APPID -->
         <meta-data
             android:name="PUSH_APPKEY"
-            android:value="mLHCs106pV6haRBXcxrT03" /> <!-- 替换为第三方应用的APPKEY -->
+            android:value="j70Upo87La8G5KFjKsfe4" /> <!-- 替换为第三方应用的APPKEY -->
         <meta-data
             android:name="PUSH_APPSECRET"
-            android:value="c4vRukqGfe5kY5SHNyyxg" /> <!-- 替换为第三方应用的APPSECRET -->
+            android:value="ZElJ3JGdQt8RpnuisWKNb7" /> <!-- 替换为第三方应用的APPSECRET -->
         <meta-data
             android:name="PUSH_GROUPID"
             android:value="" />
@@ -105,7 +105,7 @@
             <intent-filter>
 
                 <!-- 替换为action android:name="com.igexin.sdk.action.第三方应用APPID" -->
-                <action android:name="com.igexin.sdk.action.sypp1KKD1s8kwpMH4iehf5" />
+                <action android:name="com.igexin.sdk.action.aLtFayPtqr6gZmY5dHk0C4" />
             </intent-filter>
         </receiver>
 

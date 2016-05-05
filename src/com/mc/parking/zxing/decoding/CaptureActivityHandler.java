@@ -29,7 +29,7 @@ import android.util.Log;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.zxing.camera.CameraManager;
 import com.mc.parking.zxing.camera.MipcaActivityCapture;
 import com.mc.parking.zxing.view.ViewfinderResultPointCallback;

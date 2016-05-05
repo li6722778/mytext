@@ -6,7 +6,7 @@ import android.net.Uri;
 import android.os.Vibrator;
 import com.mc.parking.client.Constants;
 import com.mc.parking.client.PackingApplication;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 public class Notice {
 
 

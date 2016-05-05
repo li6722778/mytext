@@ -1,6 +1,6 @@
 package com.mc.parking.admin.adrm;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 import android.content.Context;
 import android.content.res.Configuration;

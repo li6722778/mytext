@@ -78,7 +78,7 @@ import com.baidu.navisdk.comapi.routeplan.RoutePlanParams.NE_RoutePlan_Mode;
 import com.google.gson.reflect.TypeToken;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.BaiduParkInfo;
 import com.mc.parking.client.entity.MapMakers;
 import com.mc.parking.client.entity.OrderEntity;

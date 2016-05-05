@@ -32,7 +32,7 @@ import android.widget.Toast;
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.mc.addpic.utils.Bimp;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.TParkInfoEntity;
 import com.mc.parking.client.ui.admin.ChangeParkPriceFragment.MyTimePickerDialog;
 import com.mc.parking.client.utils.DBHelper;

@@ -12,7 +12,7 @@ import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.mc.parking.client.Constants;
 import com.mc.parking.client.PackingApplication;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.adapter.IndexGalleryAdapter;
 import com.mc.parking.client.entity.IndexGalleryItemData;
 import com.mc.parking.client.layout.BaseActivity;

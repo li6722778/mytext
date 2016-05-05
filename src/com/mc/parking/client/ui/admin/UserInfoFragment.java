@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.layout.BaseDialogFragmentv4;
 import com.mc.parking.client.layout.CustomProgressDialog;
 import com.mc.parking.client.utils.SafeAsyncTask;

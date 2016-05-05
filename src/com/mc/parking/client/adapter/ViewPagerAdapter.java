@@ -13,7 +13,7 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.ui.MainActivity;
 
 public class ViewPagerAdapter extends PagerAdapter{

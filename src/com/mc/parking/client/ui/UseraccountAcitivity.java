@@ -20,7 +20,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.layout.ActionBaseActivity;
 import com.mc.parking.client.layout.CircleImageView;
 import com.mc.parking.client.layout.RoundImageView;

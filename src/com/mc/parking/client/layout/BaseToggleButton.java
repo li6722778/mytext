@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.TextView;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class BaseToggleButton extends View implements OnTouchListener{
 	private boolean NowChoose = false;// 记录当前按钮是否打开,true为打开,false为关闭  

@@ -9,7 +9,7 @@ import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.widget.Button;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 public class TimeCountUtil extends CountDownTimer {
 	private Activity mActivity;

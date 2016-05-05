@@ -30,7 +30,7 @@ import android.widget.Toast;
 import com.android.volley.Request.Method;
 import com.google.gson.reflect.TypeToken;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.ParkCommentsEntity;
 import com.mc.parking.client.entity.TParkInfoEntity;
 import com.mc.parking.client.entity.TParkInfo_ImgEntity;

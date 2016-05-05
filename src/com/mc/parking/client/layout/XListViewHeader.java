@@ -8,7 +8,7 @@ package com.mc.parking.client.layout;
 
 
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 import android.content.Context;
 import android.util.AttributeSet;

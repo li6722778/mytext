@@ -32,7 +32,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AbsListView.OnScrollListener;
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 
 

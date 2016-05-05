@@ -11,7 +11,7 @@ import com.google.gson.reflect.TypeToken;
 import com.igexin.sdk.PushManager;
 import com.mc.addpic.utils.Bimp;
 import com.mc.parking.client.Constants;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.entity.ChebolePayOptions;
 import com.mc.parking.client.entity.TParkService;
 import com.mc.parking.client.entity.TTopBannner;

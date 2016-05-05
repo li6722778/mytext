@@ -1,7 +1,7 @@
 package com.mc.addpic.utils;
 
 
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 
 import android.content.Context;
 import android.content.res.Resources;

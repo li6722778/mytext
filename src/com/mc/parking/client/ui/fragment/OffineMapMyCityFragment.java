@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.baidu.mapapi.map.offline.MKOfflineMap;
-import com.mc.parking.client.R;
+import com.mc.park.client.R;
 import com.mc.parking.client.utils.SessionUtils;
 
 public class OffineMapMyCityFragment extends android.support.v4.app.Fragment {
